@@ -2,13 +2,17 @@
 
 namespace LethalCompanyTemplate
 {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin(modGUID, modName, modVersion)]
     public class Plugin : BaseUnityPlugin
     {
+        private const string modGUID = "VNicoceli.TestMod";
+        private const string modName = "To Be Created";
+        private const string modVersion = "1.0.0";
+
         private void Awake()
         {
             // Plugin startup logic
-            Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
+            Logger.LogInfo($"Plugin {modGUID} is loaded!");
         }
     }
 }
